@@ -33,11 +33,9 @@ do
 	addrValue=$(cat "$ADDR_TAG"_"$file")
 	OTHER_PARAM="$OTHER_PARAM $file\@$addrValue"
 done
-
+#./mkbootfs ../ramdisk-U | gzip > ./ramdisk.img
 # Generate ramdisk file
-tools/mkbootfs ../ramdisk | gzip > ../$FILE_RAMDISK
-./mkbootfs ramdisk | gzip > ./ramdisk.img
-
+tools/mkbootfs ramdisk | gzip > $FILE_RAMDISK
 
 # Make kernel-updated.elf
 echo "python $TOOL_MKELF -o $OUTPUT_BOOTIMG \
