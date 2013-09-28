@@ -1,4 +1,4 @@
-The-kernel-package-for-cygwin
+The-kernel-package-for-linux
 =============================
 
 索尼内核解包脚本，使用此工具必须有python。
