@@ -11,6 +11,8 @@ The-kernel-package-for-cygwin
 但是官方sin内核用强刷工具再次解包为kernel.elf，可以使用！
 
 
-内核包装             ./pack
+内核包装            
+
+ ./pack
 
 
